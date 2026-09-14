@@ -560,6 +560,23 @@ Use this structure as your final `app.py` and run:
 streamlit run app.py
 ```
 
+To exit the running of app, press "Control+C" to escape. To run the app in the background, run:
+
+```bash
+nohup streamlit run app.py &
+```
+
+To exit from running the app in the background, check the port no. relating to streamlit from "Ports", for example port no.8501, to confirm and run
+
+```bash
+lsof -i :8501
+```
+After confirming the port no., kill the process to run:
+
+```bash
+kill 8501
+```
+
 ---
 
 ## **Section 8: Deployment & Sharing (20 min)**
