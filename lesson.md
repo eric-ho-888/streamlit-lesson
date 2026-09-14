@@ -566,7 +566,13 @@ To exit the running of app, press "Control+C" to escape. To run the app in the b
 nohup streamlit run app.py &
 ```
 
-To exit from running the app in the background, check the port no. relating to streamlit from "Ports", for example port no.8501, to confirm and run
+To close the running app and kill the process - streamlit, run:
+
+```bash
+pkill -f streamlit
+```
+
+Alternatively, check the port no. relating to streamlit from "Ports", for example port no.8501, to confirm and run
 
 ```bash
 lsof -i :8501
